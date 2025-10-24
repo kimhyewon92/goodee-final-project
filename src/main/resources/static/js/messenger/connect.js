@@ -8,7 +8,7 @@ messagesDiv.scrollTop = messagesDiv.scrollHeight;
 const chatRoomNum = document.querySelector('#chatRoomNum').value;
 const sender = document.querySelector('#messageSender').value;
 const senderName = document.querySelector('#messageSenderName').value;
-const socket = new SockJS('http://3.35.234.15/ws-stomp');
+const socket = new SockJS('http://52.78.103.13/ws-stomp');
 const stompClient = Stomp.over(socket);
 stompClient.connect({}, function (frame) {
     console.log('Connected: ' + frame); // 커넥션 콘솔에 표시
